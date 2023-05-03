@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Menu
+namespace lab3
 {
 	class Program
 	{
