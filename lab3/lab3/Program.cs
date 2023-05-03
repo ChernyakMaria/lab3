@@ -4,7 +4,6 @@ namespace lab3{
 	{
 		static void Main(string[] args)
 		{
-
 			double a;
 			Console.WriteLine("Введите A: ");
 			a = Convert.ToDouble(Console.ReadLine());
@@ -16,6 +15,7 @@ namespace lab3{
 			Console.WriteLine("Введите знак для реализации операции:");
 			Console.WriteLine("(+)");
 			Console.WriteLine("(-)");
+			Console.WriteLine("(*)");
 			znak = Convert.ToChar(Console.ReadLine());
 			switch (znak)
 			{
@@ -27,6 +27,11 @@ namespace lab3{
 
 				case '-':
 					total = a - b;
+					Console.WriteLine("Результат:" + total);
+					break;
+
+				case '*':
+					total = a * b;
 					Console.WriteLine("Результат:" + total);
 					break;
 
